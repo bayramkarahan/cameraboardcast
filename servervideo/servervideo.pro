@@ -1,7 +1,7 @@
 QT       += core gui
 QT += network
 
-SOURCES += yayinci.cpp
+SOURCES += servervideo.cpp
 
 LIBS += -lgstreamer-1.0 -lgstapp-1.0 -lgstvideo-1.0 -lgstaudio-1.0
 INCLUDEPATH += /usr/include/gstreamer-1.0
