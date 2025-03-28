@@ -109,9 +109,9 @@ receiver->setVideoOutput(videoWidget);
    // xvimagesink name=qtvideosink"));
 //receiver->setMedia(QUrl("gst-pipeline: udpsrc address=239.0.0.1 port=5000 ! application/x-rtp, media=video, clock-rate=90000, encoding-name=H264, payload=96 ! rtph264depay ! avdec_h264 !  xvimagesink name=qtvideosink"));
 //receiver->play();
-///receiver->setMedia(QUrl("gst-pipeline: udpsrc port=5000 address=239.0.0.101 ! application/x-rtp, payload=96 ! rtph264depay ! avdec_h264 ! videoconvert !  xvimagesink name=qtvideosink"));
+///receiver->setMedia(QUrl("gst-pipeline: udpsrc port=5000 address=239.0.0.244 ! application/x-rtp, payload=96 ! rtph264depay ! avdec_h264 ! videoconvert !  xvimagesink name=qtvideosink"));
 //receiver->setMedia(QUrl("gst-pipeline: udpsrc port=5000 address="+newIp+" ! application/x-rtp, payload=96 ! rtph264depay ! avdec_h264 ! videoconvert !  xvimagesink name=qtvideosink"));
-receiver->setMedia(QUrl("gst-pipeline: udpsrc port=5000 address=239.0.1.101 ! application/x-rtp, payload=96 ! rtph264depay ! avdec_h264 ! videoconvert !  xvimagesink name=qtvideosink"));
+receiver->setMedia(QUrl("gst-pipeline: udpsrc port=5000 address=239.0.23.244 ! application/x-rtp, payload=96 ! rtph264depay ! avdec_h264 ! videoconvert !  xvimagesink name=qtvideosink"));
 receiver->play();
 
     receiver->play();

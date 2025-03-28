@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
     GError *error = NULL;
 
     // Video ve ses pipeline'ları
-    std::string videoPipeline = "ximagesrc ! videoscale ! video/x-raw,width=320,height=240 ,framerate=15/1 ! videoconvert ! x264enc tune=zerolatency bitrate=512 ! rtph264pay ! udpsink host="+newIp.toStdString()+" port=5000";
+    std::string videoPipeline = "ximagesrc ! videoscale ! video/x-raw,width=800,height=600 ,framerate=20/1 ! videoconvert ! x264enc tune=stillimage bitrate=512 ! rtph264pay ! udpsink host="+newIp.toStdString()+" port=5000";
     //  ximagesrc ! video/x-raw,framerate=30/1 ! videoconvert ! x264enc tune=zerolatency bitrate=1024 ! rtph264pay ! udpsink host="+newIp.toStdString()+" port=5000";
     //  ximagesrc ! video/x-raw,framerate=15/1 ! videoconvert ! x264enc tune=zerolatency bitrate=512 ! rtph264pay ! udpsink host=239.0.0.1 port=5000
     //  Video pipeline'ı oluştur
